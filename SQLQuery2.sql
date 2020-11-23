@@ -27,6 +27,13 @@ Left Join Artist a on s.ArtistId = a.id;
 */
 
 --Exercise 4
+/*
 Select ArtistName
 From Artist ar, Song s
 Where ar.Id = ArtistId AND GenreId = 7;
+*/
+
+--Exercise 5
+Select ArtistName
+From Artist ar, Song s
+Where ar.Id = ArtistId AND GenreId = 2 OR ar.Id = ArtistId AND GenreID = 4;
