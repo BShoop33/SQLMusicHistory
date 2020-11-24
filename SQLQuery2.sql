@@ -1,14 +1,14 @@
 ﻿/*
 --Exercise 1
-Select Id, Label
-From Genre;
+SELECT Id, Label
+FROM Genre;
 */
 
 /*
 --Exercise 2
-Select Id, ArtistName, YearEstablished
-From Artist
-Order By ArtistName
+SELECT Id, ArtistName, YearEstablished
+FROM Artist
+ORDER BY ArtistName
 */
 
 /*
@@ -21,34 +21,40 @@ Order By ArtistName
 --Note:  In a join tables operation, you can only specify a single table in the From field. The second table, and any alias
 --you assign that table, is specific at the beginning of the Left Join field to the left of the On statement. In this example,
 --the Song table is assigned an "s" alias in the From field, and the Artist table is assigned an "a" alias in the Left Join field.
-Select Title, a.ArtistName
-From Song s
-Left Join Artist a on s.ArtistId = a.id;
+SELECT Title, a.ArtistName
+FROM Song s
+LEFT JOIN Artist a ON s.ArtistId = a.id;
 */
 
 --Exercise 4
 /*
-Select ArtistName
-From Artist ar, Song s
-Where ar.Id = ArtistId AND GenreId = 7;
+SELECT ArtistName
+FROM Artist ar, Song s
+WHERE ar.Id = ArtistId AND GenreId = 7;
 */
 
 --Exercise 5
 /*
-Select ArtistName
-From Artist ar, Song s
-Where ar.Id = ArtistId AND GenreId = 2 OR ar.Id = ArtistId AND GenreID = 4;
+SELECT ArtistName
+FROM Artist ar, Song s
+WHERE ar.Id = ArtistId AND GenreId = 2 OR ar.Id = ArtistId AND GenreID = 4;
 */
 
 --Exercise 6
 /*
-Select a.Id
-From Album a
-Left Join Song s
-On a.Id = s.AlbumId
-Where s.AlbumId IS NULL
+SELECT a.Id
+FROM Album a
+LEFT JOIN Song s
+ON a.Id = s.AlbumId
+WHERE s.AlbumId IS NULL
 */
 
 --Exercise 7
-Insert INTO Artist (ArtistName, YearEstablished)
+/*
+INSERT INTO Artist (ArtistName, YearEstablished)
 Values ('Adele', 1988);
+*/
+
+--Exercise 
+INSERT INTO Album (Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId)
+VALUES ('21',01/24/2011,4812,'Columbia',28,15)
