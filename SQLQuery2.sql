@@ -86,6 +86,13 @@ GROUP BY AlbumId
 */
 
 --Exercise 12
+/*
 SELECT COUNT (ArtistId)
 FROM Song
 GROUP BY ArtistId
+*/
+
+--Exercise 13
+SELECT COUNT (GenreId)
+FROM Song
+GROUP BY GenreId
