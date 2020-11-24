@@ -79,6 +79,13 @@ WHERE ar.ArtistName = 'Adele';
 */
 
 --Exercise 11
+/*
 SELECT COUNT (AlbumId)
 FROM Song
 GROUP BY AlbumId
+*/
+
+--Exercise 12
+SELECT COUNT (ArtistId)
+FROM Song
+GROUP BY ArtistId
