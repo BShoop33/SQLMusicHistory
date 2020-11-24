@@ -100,13 +100,12 @@ GROUP BY GenreId
 */
 
 --Exercise 14
-/*
 SELECT COUNT(DISTINCT al.Label) AS 'Labels', ar.ArtistName
 FROM Album al
 LEFT JOIN Artist ar ON al.ArtistId = ar.id
 GROUP BY ArtistName 
 HAVING COUNT(DISTINCT Label) > 1
-*/
+
 
 --Exercise 15
 /*
@@ -129,6 +128,7 @@ WHERE s.SongLength = (
 */
 
 --Exercise 17
+/*
 SELECT s.Title, s.SongLength, al.Title
 FROM Song s
 LEFT JOIN Album al ON s.AlbumId = al.Id
@@ -136,3 +136,4 @@ WHERE s.SongLength = (
 	SELECT MAX(s.SongLength)
 	FROM Song s
 )
+*/
