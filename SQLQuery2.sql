@@ -70,8 +70,15 @@ VALUES ('Rolling in the Deep',349,'01/24/2011',15,28,25),
 */
 
 --Exercise 10
+/*
 SELECT al.Title, ar.ArtistName, s.Title
 FROM Song s
 LEFT JOIN Artist ar ON s.ArtistId = ar.id
 LEFT JOIN Album al ON s.AlbumId = al.id
 WHERE ar.ArtistName = 'Adele';
+*/
+
+--Exercise 11
+SELECT COUNT (AlbumId)
+FROM Song
+GROUP BY AlbumId
