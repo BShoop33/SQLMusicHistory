@@ -106,6 +106,7 @@ LEFT JOIN Artist ar ON al.ArtistId = ar.id
 GROUP BY ArtistName 
 HAVING COUNT(DISTINCT Label) > 1
 
+
 --Exercise 15
 /*
 SELECT al.Title, al.AlbumLength
