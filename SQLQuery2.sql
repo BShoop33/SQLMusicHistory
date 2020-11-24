@@ -55,6 +55,14 @@ INSERT INTO Artist (ArtistName, YearEstablished)
 Values ('Adele', 1988);
 */
 
---Exercise 
+--Exercise 8
+/*
 INSERT INTO Album (Title, ReleaseDate, AlbumLength, Label, ArtistId, GenreId)
-VALUES ('21',01/24/2011,4812,'Columbia',28,15)
+VALUES ('21','01/24/2011',4812,'Columbia',28,15)
+*/
+
+--Exercise 9
+INSERT INTO Song (Title,SongLength,ReleaseDate,GenreId,ArtistId,AlbumId)
+VALUES ('Rolling in the Deep',349,'01/24/2011',15,28,25),
+	   ('Set Fire to the Rain',401,'01/24/2011',15,28,25),
+	   ('Someone Like You',445,'01/24/2011',15,28,25)
