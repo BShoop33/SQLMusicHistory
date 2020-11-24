@@ -93,6 +93,19 @@ GROUP BY ArtistId
 */
 
 --Exercise 13
+/*
 SELECT COUNT (GenreId)
 FROM Song
 GROUP BY GenreId
+*/
+
+--Exercise 14
+
+
+--Exercise 15
+SELECT al.Title, al.AlbumLength
+FROM Album al
+WHERE al.AlbumLength = (
+	SELECT MAX(al.AlbumLength)
+	FROM Album al
+)
